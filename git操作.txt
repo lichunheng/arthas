@@ -23,6 +23,18 @@ git remote show origin  --查看远程分支的信息
 git add . --不要使用*，使用*可能不会匹配.ignore文件的规则
 add -- 三种作用：1.增加追踪；2.修改文件添加到暂存区；3.冲突修改后标识冲突已经解决；
 
+-- 删除
+git remote prune origin --裁剪掉远程分支
+
+-- 查看远程分支的日志记录
+git log origin/master
+git log remotes/origin/master
+git log refs/remotes/origin/master
+
+-- rebase --变基
+git rebase 需要合并的分支 
+git rebase --abort
+git rebase --skip
 
 
 
