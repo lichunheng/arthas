@@ -1,0 +1,30 @@
+git reflog   --操作记录
+git reset --hard commit-id  --回退/撤销
+git checkout -- test.txt --丢弃更新（丢掉相对于暂存区当中的最后一次内容的变更）
+git rm --cached test.txt --将之前添加到暂存区的内容从暂存区移除到工作区，最后一次add的内容
+linux: 重复grep  
+git stash   --当正在进行的步骤保存下来
+git stash list --列举出当前暂存的
+git stash pop --取出来，并删除
+git stash apply --取出来，并不删除
+git stash apply stash@{0}  --恢复到某一个暂存
+git tag v1.0 
+git tag -a v2.0 -m "2.0 release"
+git blame test.txt   --显示提交的信息和姓名
+
+--
+diff 两个文件比较
+git diff --暂存区跟工作区的文件的内容进行比较
+git diff HEAD --最新的提交与工作区之间的差别
+git diff --cached    -- 最新的提交与暂存区之间的差别
+git remote show origin  --查看远程分支的信息
+
+-- 提示
+git add . --不要使用*，使用*可能不会匹配.ignore文件的规则
+add -- 三种作用：1.增加追踪；2.修改文件添加到暂存区；3.冲突修改后标识冲突已经解决；
+
+
+
+
+
+
